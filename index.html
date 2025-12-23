@@ -1,107 +1,613 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>FREE USCIS RFE/NOID Response Letter — Lawyer-Formatted Draft in Minutes</title>
-<meta name="description" content="Get a lawyer-formatted USCIS RFE/NOID response letter by email in minutes. Free draft, optional same-day attorney upgrade for exhibits and filing."/>
-<style>
-  body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fff;color:#111}
-  header,footer{padding:18px 16px;border-bottom:1px solid #eee}
-  footer{border-top:1px solid #eee;border-bottom:none;color:#666}
-  .wrap{max-width:900px;margin:0 auto;padding:16px}
-  h1{font-size:28px;margin:10px 0 8px}
-  p.lead{font-size:16px;margin:0 0 16px}
-  .cta{background:#0a7;color:#fff;padding:14px 18px;border-radius:10px;text-decoration:none;display:inline-block;margin:10px 0}
-  .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
-  .card{border:1px solid #eee;border-radius:12px;padding:16px}
-  .badges{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
-  .badge{background:#eef;border:1px solid #dde;border-radius:999px;padding:6px 10px;font-size:12px}
-  .price{border:2px solid #eee;border-radius:12px;padding:14px;margin:10px 0}
-  .price h3{margin:0 0 6px}
-  .muted{color:#666}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Body Language Driver Trainer — Control / Approval / Protection</title>
+  <style>
+    :root { font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+    body{ margin:0; background:#0b0d10; color:#e9eef7; }
+    .wrap{ max-width:1180px; margin:0 auto; padding:18px; }
+    .card{ background:#121722; border:1px solid #23304a; border-radius:14px; padding:16px; box-shadow:0 8px 26px rgba(0,0,0,.35); }
+    h1{ font-size:16px; margin:0 0 10px; font-weight:900; letter-spacing:.2px; }
+    .scene{
+      font-size:18px; line-height:1.35;
+      padding:14px; background:#0f1420; border:1px solid #22314d; border-radius:12px;
+    }
+    .sub{ margin-top:10px; font-size:12px; opacity:.9; line-height:1.45; }
+    .row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; align-items:center; }
+    button{
+      appearance:none; border:1px solid #2a3a5d; background:#111a2c; color:#e9eef7;
+      padding:10px 12px; border-radius:10px; cursor:pointer; font-weight:900;
+    }
+    button:hover{ background:#14203a; }
+    button:disabled{ opacity:.55; cursor:not-allowed; }
+    select,input[type="number"]{
+      padding:8px; border-radius:10px; border:1px solid #2a3a5d; background:#0f1420; color:#e9eef7;
+    }
+    input[type="checkbox"]{ accent-color:#7aa6ff; transform:scale(1.08); }
+    .pill{ display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid #2a3a5d; background:#0f1420; font-size:12px; }
+    .meta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap:12px; margin-top:12px; }
+    @media (max-width: 960px){ .grid{ grid-template-columns:1fr; } }
+    .feedback{ margin-top:12px; padding:12px; border-radius:12px; border:1px solid #2a3a5d; background:#0f1420; display:none; }
+    .good{ border-color:#2e6d3d; background:#0f1b13; }
+    .bad{ border-color:#7a2f2f; background:#1b0f10; }
+    .respbox{ margin-top:10px; padding:10px; border-radius:12px; border:1px solid #2a3a5d; background:#0f1420; }
+    .respbox b{ display:block; margin-bottom:6px; }
+    .kpi{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .kpi .box{ flex:1; min-width:240px; padding:10px; border-radius:12px; border:1px solid #2a3a5d; background:#0f1420; }
+    .box b{ font-size:13px; }
+    .box div{ font-size:12px; opacity:.92; margin-top:3px; line-height:1.35; }
+    .timerbar{ height:10px; border-radius:999px; overflow:hidden; border:1px solid #2a3a5d; background:#0f1420; }
+    .timerfill{ height:100%; width:0%; background:#7aa6ff; transition: width 50ms linear; }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono"; font-size:12px; opacity:.92; }
+    .hotkeys{ margin-top:10px; padding:10px; border-radius:12px; border:1px dashed #2a3a5d; background:#0f1420; }
+  </style>
 </head>
 <body>
-<header>
-  <div class="wrap"><strong>Ettrick Campbell, Esq.</strong> • Immigration Help</div>
-</header>
+<div class="wrap">
+  <div class="card">
+    <h1>Body Language Driver Trainer — classify what they want: CONTROL / APPROVAL / PROTECTION</h1>
 
-<main class="wrap">
-  <h1>Free USCIS RFE/NOID Response Letter — Get Your Draft in Minutes</h1>
-  <p class="lead">Lawyer-formatted draft emailed to you. <strong>Same-day attorney upgrade</strong> available for exhibits and filing.</p>
-  <div class="badges">
-    <div class="badge">✅ Built by a New York attorney</div>
-    <div class="badge">✅ PDF delivered to your email</div>
-    <div class="badge">✅ Upgrade for exhibits + submission packet</div>
+    <div class="scene" id="scene">Loading…</div>
+    <div class="sub" id="microNote"></div>
+
+    <div class="row">
+      <button id="btnC" title="Hotkey: 1">CONTROL (1)</button>
+      <button id="btnA" title="Hotkey: 2">APPROVAL (2)</button>
+      <button id="btnP" title="Hotkey: 3">PROTECTION (3)</button>
+      <button id="btnReveal" title="Hotkey: R">Reveal (R)</button>
+      <button id="btnNext" title="Hotkey: N">Next (N)</button>
+    </div>
+
+    <div class="meta">
+      <span class="pill" id="modePill">Mode: Mixed</span>
+      <span class="pill" id="distancePill">Distance: —</span>
+      <span class="pill" id="displayPill">Display: —</span>
+      <span class="pill" id="confidencePill">Signal: —</span>
+      <span class="pill" id="streakPill">Streak: 0</span>
+      <span class="pill" id="timerPill">Timer: 2.0s</span>
+      <span class="pill" id="autoPill">Auto-next: ON</span>
+    </div>
+
+    <div class="timerbar" title="Decision timer">
+      <div class="timerfill" id="timerFill"></div>
+    </div>
+
+    <div class="feedback" id="feedback">
+      <div id="fbLine"></div>
+      <div class="sub" id="fbWhy"></div>
+      <div class="respbox">
+        <b>Best response to SAY (you → her)</b>
+        <div id="bestSay"></div>
+        <div class="sub" id="bestBody"></div>
+      </div>
+      <div class="respbox">
+        <b>What to DO NEXT (micro-action)</b>
+        <div id="bestNext"></div>
+      </div>
+    </div>
+
+    <div class="kpi">
+      <div class="box"><b>Score</b><div id="scoreLine">0 correct / 0 total</div></div>
+      <div class="box"><b>Accuracy</b><div id="accLine">0%</div></div>
+      <div class="box"><b>Last 50</b><div id="last50Line">—</div></div>
+    </div>
+
+    <div class="grid">
+      <div class="card" style="background:#0f1420;">
+        <b>Settings (more realistic + harder)</b>
+        <div class="row" style="margin-top:10px;">
+          <label class="sub">Mode
+            <select id="mode">
+              <option value="mixed">Mixed</option>
+              <option value="control">Control only</option>
+              <option value="approval">Approval only</option>
+              <option value="protection">Protection only</option>
+            </select>
+          </label>
+
+          <label class="sub">Context
+            <select id="context">
+              <option value="nyc">NYC strangers/public</option>
+              <option value="dating">Dating/social</option>
+              <option value="work">Work/client-like</option>
+              <option value="mixed">All contexts</option>
+            </select>
+          </label>
+
+          <label class="sub">Timer (sec)
+            <input id="timerSec" type="number" min="0" max="10" step="0.5" value="2" />
+          </label>
+
+          <label class="sub">Auto-next delay (ms)
+            <input id="autoDelay" type="number" min="0" max="5000" step="100" value="900" />
+          </label>
+
+          <label class="sub" style="display:flex; align-items:center; gap:8px;">
+            <input id="autoNext" type="checkbox" checked />
+            Auto-next
+          </label>
+
+          <label class="sub" style="display:flex; align-items:center; gap:8px;">
+            <input id="hardMode" type="checkbox" checked />
+            Hard mode (mixed cues)
+          </label>
+
+          <label class="sub" style="display:flex; align-items:center; gap:8px;">
+            <input id="tts" type="checkbox" />
+            Read scene aloud (TTS)
+          </label>
+
+          <button id="btnReset">Reset</button>
+        </div>
+
+        <div class="hotkeys">
+          <div class="sub"><b>Hotkeys:</b> 1=Control, 2=Approval, 3=Protection, R=Reveal, N=Next</div>
+          <div class="sub"><b>Important:</b> “Micro-expressions” are probabilistic. This trainer teaches fast pattern recognition, not certainty.</div>
+          <div class="sub"><b>Rule:</b> classify by what her body is trying to <span class="mono">GET</span> from you: steer / be liked / be safe.</div>
+        </div>
+      </div>
+
+      <div class="card" style="background:#0f1420;">
+        <b>One-look map (what to notice first)</b>
+        <div class="sub" style="margin-top:10px;">
+          <ul>
+            <li><b>Control</b>: forward lean + stillness + “claiming space” + directing gestures → she’s steering.</li>
+            <li><b>Approval</b>: frequent smiles + quick nods + self-touch + checking your face → she’s seeking acceptance.</li>
+            <li><b>Protection</b>: distance + angled body + guarded hands + scanning exits/phone → she’s reducing risk.</li>
+          </ul>
+          <div class="sub">You’ll get a recommended “say + do” every round. Repeat it out loud to program reflex.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub" style="margin-top:12px; opacity:.86;">
+      You asked for “millions.” This generates <b>effectively unlimited</b> combinations by mixing distance, gaze, posture, gestures, and context—so you can train for hours without repeating.
+    </div>
   </div>
+</div>
 
-  <!-- Your live Google Form link -->
-  <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSde1-kv2llneVzb1PlC7gWpQMKKpqYATCYQH8z4CVdlAUw8Xg/viewform?usp=sharing&ouid=108197865333540720410" target="_blank" rel="noopener">Start Free RFE/NOID Letter</a>
-
-  <div class="grid">
-    <div class="card">
-      <h2>How it works</h2>
-      <ol>
-        <li>Answer simple questions and <strong>paste the exact USCIS request</strong>.</li>
-        <li>Get a <strong>lawyer-formatted PDF</strong> by email.</li>
-        <li>Upgrade if you want us to <strong>polish, label exhibits, or file</strong> for you.</li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <h2>Instant Upgrades</h2>
-      <div class="price">
-        <h3>$49 — Attorney Draft Review (48h)</h3>
-        <p class="muted">Line-by-line edits + improvement notes.</p>
-        <div id="paypal-button-container-49"></div>
-      </div>
-      <div class="price">
-        <h3>$199 — Full Response Packet</h3>
-        <p class="muted">Polished letter + labeled exhibits index + evidence checklist.</p>
-        <div id="paypal-button-container-199"></div>
-      </div>
-      <div class="price">
-        <h3>$799 — We Handle Everything</h3>
-        <p class="muted">We prepare, organize, and <strong>file</strong> your response.</p>
-        <div id="paypal-button-container-799"></div>
-      </div>
-      <p class="muted">After payment you’ll be sent to the Next Steps page to upload evidence.</p>
-    </div>
-
-    <div class="card">
-      <h2>What you get free</h2>
-      <ul>
-        <li>Formatted response letter with your facts</li>
-        <li>Point-by-point structure that mirrors USCIS</li>
-        <li>Exhibit A–D organization plan</li>
-      </ul>
-    </div>
-  </div>
-</main>
-
-<footer class="wrap">
-  Attorney Advertising. Not legal advice. No attorney-client relationship until engagement is signed. © <span id="y"></span> Ettrick Campbell.
-</footer>
-
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-
-<!-- PayPal Buttons: use the LIVE Client ID via the official SDK URL -->
-<script src="https://www.paypal.com/sdk/js?client-id=AfPYC5X8SuGxg9-OSVSFTNIP0xp8RPTBVSrrwF5SPB4fNjaDZ0B55Y5huMiiuWCJvW6eHRJLINN0F69l&currency=USD"></script>
 <script>
-function renderBtn(id, price, desc){
-  paypal.Buttons({
-    createOrder: (data, actions) => actions.order.create({
-      purchase_units:[{amount:{value:String(price)}, description:desc}]
-    }),
-    onApprove: (data, actions) => actions.order.capture().then(()=>{
-      window.location.href = "https://ettrickc-dev.github.io/rfe-noid-generator/thankyou.html";
-    })
-  }).render(id);
-}
-renderBtn('#paypal-button-container-49', 49, 'Attorney Draft Review');
-renderBtn('#paypal-button-container-199', 199, 'Full RFE/NOID Response Packet');
-renderBtn('#paypal-button-container-799', 799, 'We Handle Everything');
+(() => {
+  const pick = (arr) => arr[Math.floor(Math.random()*arr.length)];
+  const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+  const chance = (p) => Math.random() < p;
+
+  // Basic sets
+  const DIST = [
+    {k:"Near", w:"within arm’s reach"},
+    {k:"Mid", w:"6–10 feet away"},
+    {k:"Far", w:"across the room / street"},
+  ];
+  const DISPLAY = [
+    {k:"Facing you", w:"torso mostly squared to you"},
+    {k:"Angled", w:"body angled 30–60° (half turned)"},
+    {k:"Side-on", w:"shoulder toward you, ready to exit"},
+    {k:"Approach-then-stop", w:"moves closer then stops short"},
+  ];
+  const CONTEXTS = {
+    nyc: ["subway platform","train car","coffee line","bodega checkout","elevator","street corner","gym entrance","building lobby"],
+    dating: ["first date","bar intro","DMs/texting (in-person follow-up)","after-work meetup","party small talk","walking together"],
+    work: ["front desk","professional meeting","service inquiry call (in-person vibe)","payment/timeline talk","negotiation moment","schedule conflict"],
+    mixed: []
+  };
+  CONTEXTS.mixed = [...CONTEXTS.nyc, ...CONTEXTS.dating, ...CONTEXTS.work];
+
+  // Cues — we treat “micro” as small, brief cues, not guaranteed truth.
+  const MICRO = {
+    control: [
+      "Jaw tightens briefly, then stillness.",
+      "Single eyebrow raise during your sentence (challenge check).",
+      "Hard blink pause before speaking (decision stance).",
+      "Micro-smirk when you hesitate (tests dominance).",
+      "Chin lifts a few millimeters (status claim)."
+    ],
+    approval: [
+      "Quick smile flash, then watches your reaction.",
+      "Eyebrows lift (seeking reassurance).",
+      "Lip press + small nod (trying to be agreeable).",
+      "Self-touch at collar/neck (soothing).",
+      "Rapid blink while waiting for your response."
+    ],
+    protection: [
+      "Glance to exits/phone, then back to you.",
+      "Mouth corners tighten (caution), minimal smile.",
+      "Shoulders rise slightly, then drop (brace/release).",
+      "Eye contact breaks early (limits exposure).",
+      "Micro-frown when topic shifts (risk scan)."
+    ]
+  };
+
+  // Macro body language and “why” (driver)
+  const DR = {
+    control: {
+      label: "CONTROL",
+      why: "Her body is trying to steer: define the frame, set terms, or push clarity/authority.",
+      cues: [
+        "Forward lean with steady eye contact.",
+        "Still posture, low fidgeting, controlled gestures.",
+        "Pointing/chopping hand motions to direct the interaction.",
+        "Takes space (feet planted, shoulders open).",
+        "Looks at you less for approval, more to measure compliance."
+      ],
+      say: [
+        "Got it. What outcome do you want right now?",
+        "Okay. Give me your top two requirements and I’ll match that.",
+        "Understood. What’s the decision you want me to make here?",
+        "Fair. If we do it your way, what does success look like?",
+        "I hear you. What matters most: speed, certainty, or quality?"
+      ],
+      body: "Body to use: slow your pace, keep steady eye contact, relaxed shoulders, minimal words, offer structure (not debate).",
+      next: [
+        "Ask one clarifying question, then present two options.",
+        "Summarize her frame in one sentence and confirm.",
+        "Set a clear next step with time/place.",
+        "Do not argue; redirect to outcome."
+      ]
+    },
+    approval: {
+      label: "APPROVAL",
+      why: "Her body is trying to connect: get reassurance, acceptance, warmth, or emotional confirmation.",
+      cues: [
+        "Frequent smiles or smile flashes, checking your face.",
+        "More nodding, mirroring, and self-soothing touches.",
+        "Leans in slightly, then pauses to see your reaction.",
+        "Voice/face softens; eyebrows lift for confirmation.",
+        "Fidgets more when uncertain, relaxes when reassured."
+      ],
+      say: [
+        "You’re good. That makes sense. What would feel best for you?",
+        "No worries—thanks for saying it. Do you want reassurance or a plan?",
+        "I get it. You’re not being too much. What do you need from me right now?",
+        "We’re good. Tell me your preference—either way is fine.",
+        "I hear you. What would make you feel confident moving forward?"
+      ],
+      body: "Body to use: soften your face, small nods, open palms, warmer tone; reassure first, then ask one clean question.",
+      next: [
+        "Validate in one sentence, then ask what would help.",
+        "Mirror her last 3–5 words briefly (signals understanding).",
+        "Offer a low-pressure choice (A/B) with warmth.",
+        "Avoid blunt criticism; keep it supportive and clear."
+      ]
+    },
+    protection: {
+      label: "PROTECTION",
+      why: "Her body is trying to stay safe: reduce risk, preserve an exit, gather proof, slow exposure.",
+      cues: [
+        "Keeps more distance, body angled, feet pointed toward exit.",
+        "Arms/hands closer to torso or objects (phone/bag as barrier).",
+        "Scanning room/people; checks environment.",
+        "Eye contact shorter; pauses before committing.",
+        "Tension reduces only after clarity/options are offered."
+      ],
+      say: [
+        "No rush. What’s the biggest risk you’re trying to avoid?",
+        "Totally fair. Here’s what’s included, what’s not, and your exit option.",
+        "We can do a small test first, then decide.",
+        "That makes sense. What would make this feel secure for you?",
+        "Let’s slow it down—here are the safe next steps."
+      ],
+      body: "Body to use: give space, don’t crowd; calm tone; show hands; reduce urgency; offer options + clear boundaries.",
+      next: [
+        "Name the risk, then offer a safe next step.",
+        "Give two options: low-risk vs. normal pace.",
+        "Confirm consent/comfort before progressing.",
+        "Avoid pressure language; emphasize control and exit."
+      ]
+    }
+  };
+
+  // Hard mode: mix cues so you must detect the DRIVER, not single tells.
+  function buildScene(driver, contextKey, hardMode) {
+    const ctx = pick(CONTEXTS[contextKey] || CONTEXTS.mixed);
+    const dist = pick(DIST);
+    const disp = pick(DISPLAY);
+
+    // Choose primary + (optional) misleading cues from other drivers
+    const primaryCues = DR[driver].cues.slice();
+    let cues = [pick(primaryCues), pick(primaryCues)];
+
+    let micro = pick(MICRO[driver]);
+
+    if (hardMode && chance(0.55)) {
+      const other = pick(["control","approval","protection"].filter(x => x!==driver));
+      cues.push(pick(DR[other].cues));     // add a misleading macro cue
+      if (chance(0.45)) micro = micro + " " + pick(MICRO[other]); // mixed micro note
+    }
+
+    // Display vs distance modifies meaning
+    const distanceNote = pick([
+      `She keeps ${dist.w}.`,
+      `She closes distance to ${dist.w}.`,
+      `She holds ${dist.w} and does not move closer.`
+    ]);
+
+    const gaze = pick([
+      "Eye contact: steady and unblinking.",
+      "Eye contact: comes in flashes, then checks your reaction.",
+      "Eye contact: brief, then looks away to scan the room.",
+      "Eye contact: steady, but feels like measuring you.",
+      "Eye contact: warm, searching, waiting for a sign."
+    ]);
+
+    const hands = pick([
+      "Hands: open and visible.",
+      "Hands: tucked close to body / gripping phone.",
+      "Hands: controlled gestures that direct the conversation.",
+      "Hands: fidgeting with sleeve, hair, or bag strap.",
+      "Hands: crossed / holding an object as a barrier."
+    ]);
+
+    const feet = pick([
+      "Feet: planted, taking space.",
+      "Feet: angled toward exit.",
+      "Feet: shifting weight back and forth.",
+      "Feet: steps closer, then stops."
+    ]);
+
+    const addNearFar = pick([
+      "You are standing still; she is the one adjusting position.",
+      "You both stop; she positions herself slightly higher/centered.",
+      "She keeps a buffer zone and watches your hands.",
+      "She mirrors your posture for a moment."
+    ]);
+
+    // If in dating/work, add a common “moment” (no explicit content; just typical)
+    const moment = contextKey==="dating" ? pick([
+      "Moment: you suggest a plan and wait for her reaction.",
+      "Moment: you make a small compliment and pause.",
+      "Moment: you ask what she’s looking for.",
+      "Moment: you mention timing and availability."
+    ]) : contextKey==="work" ? pick([
+      "Moment: you mention price/timeline and wait.",
+      "Moment: you propose next steps.",
+      "Moment: you ask for confirmation.",
+      "Moment: you ask what matters most to her."
+    ]) : pick([
+      "Moment: you ask a quick question and pause.",
+      "Moment: you both wait in line and she initiates.",
+      "Moment: you accidentally bump shoulders and she reacts.",
+      "Moment: you hold a door and she responds."
+    ]);
+
+    // Confidence label (how “clean” the signal is)
+    const signal = hardMode ? pick(["Mixed cues","Camouflaged","Double-signal","Mostly clear"]) : "Mostly clear";
+
+    // Build the text you see
+    const sceneText =
+`Context: ${ctx}.
+Distance: ${dist.k} — ${distanceNote}
+Display: ${disp.k} — ${disp.w}
+${moment}
+${gaze}
+${hands}
+${feet}
+Extra: ${addNearFar}
+
+Most noticeable cues:
+• ${cues.map(c => c).join("\n• ")}
+`;
+
+    return { driver, ctx, dist: dist.k, disp: disp.k, signal, micro, sceneText };
+  }
+
+  // TTS
+  function speak(text){
+    try{
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 1.02;
+      u.pitch = 1.0;
+      u.volume = 1.0;
+      window.speechSynthesis.speak(u);
+    }catch(e){}
+  }
+
+  // UI elements
+  const sceneEl = document.getElementById("scene");
+  const microEl = document.getElementById("microNote");
+
+  const fbEl = document.getElementById("feedback");
+  const fbLine = document.getElementById("fbLine");
+  const fbWhy = document.getElementById("fbWhy");
+  const bestSay = document.getElementById("bestSay");
+  const bestBody = document.getElementById("bestBody");
+  const bestNext = document.getElementById("bestNext");
+
+  const modePill = document.getElementById("modePill");
+  const distancePill = document.getElementById("distancePill");
+  const displayPill = document.getElementById("displayPill");
+  const confidencePill = document.getElementById("confidencePill");
+  const streakPill = document.getElementById("streakPill");
+  const timerPill = document.getElementById("timerPill");
+  const autoPill = document.getElementById("autoPill");
+
+  const timerFill = document.getElementById("timerFill");
+
+  const scoreLine = document.getElementById("scoreLine");
+  const accLine = document.getElementById("accLine");
+  const last50Line = document.getElementById("last50Line");
+
+  const btnC = document.getElementById("btnC");
+  const btnA = document.getElementById("btnA");
+  const btnP = document.getElementById("btnP");
+  const btnReveal = document.getElementById("btnReveal");
+  const btnNext = document.getElementById("btnNext");
+
+  const modeSel = document.getElementById("mode");
+  const contextSel = document.getElementById("context");
+  const timerSecEl = document.getElementById("timerSec");
+  const autoDelayEl = document.getElementById("autoDelay");
+  const autoNextEl = document.getElementById("autoNext");
+  const hardModeEl = document.getElementById("hardMode");
+  const ttsEl = document.getElementById("tts");
+  const btnReset = document.getElementById("btnReset");
+
+  // State
+  let mode="mixed", contextKey="nyc";
+  let timerSec=2.0, autoDelay=900, autoNext=true, hardMode=true, tts=false;
+
+  let current = null;
+  let total=0, correct=0, streak=0;
+  const last50=[];
+  let timerStart=0, timerRAF=null, autoTO=null;
+
+  function stopTimer(){
+    if (timerRAF) cancelAnimationFrame(timerRAF);
+    timerRAF=null;
+    timerFill.style.width="0%";
+  }
+  function stopAuto(){
+    if (autoTO) clearTimeout(autoTO);
+    autoTO=null;
+  }
+  function startTimer(){
+    stopTimer();
+    if (timerSec<=0) return;
+    timerStart = performance.now();
+    const tick = (now) => {
+      const elapsed = (now - timerStart)/1000;
+      const pct = clamp((elapsed/timerSec)*100,0,100);
+      timerFill.style.width = pct + "%";
+      if (elapsed >= timerSec){
+        reveal(null,true);
+        return;
+      }
+      timerRAF = requestAnimationFrame(tick);
+    };
+    timerRAF = requestAnimationFrame(tick);
+  }
+
+  function driverFromMode(){
+    if (mode==="mixed") return pick(["control","approval","protection"]);
+    return mode;
+  }
+
+  function setPills(){
+    modePill.textContent = `Mode: ${mode==="mixed" ? "Mixed" : DR[mode].label}`;
+    distancePill.textContent = `Distance: ${current ? current.dist : "—"}`;
+    displayPill.textContent = `Display: ${current ? current.disp : "—"}`;
+    confidencePill.textContent = `Signal: ${current ? current.signal : "—"}`;
+    streakPill.textContent = `Streak: ${streak}`;
+    timerPill.textContent = `Timer: ${timerSec.toFixed(1)}s`;
+    autoPill.textContent = `Auto-next: ${autoNext ? "ON" : "OFF"} (${autoDelay}ms)`;
+  }
+
+  function updateKPIs(){
+    scoreLine.textContent = `${correct} correct / ${total} total`;
+    const acc = total ? Math.round((correct/total)*100) : 0;
+    accLine.textContent = `${acc}%`;
+    const lastAcc = last50.length ? Math.round((last50.filter(x=>x).length/last50.length)*100) : 0;
+    last50Line.textContent = last50.length ? `${lastAcc}%` : "—";
+    streakPill.textContent = `Streak: ${streak}`;
+  }
+
+  function showScene(){
+    stopTimer(); stopAuto();
+    current = buildScene(driverFromMode(), contextKey, hardMode);
+
+    sceneEl.textContent = current.sceneText;
+    microEl.textContent = `Micro-note (brief cue): ${current.micro}`;
+
+    fbEl.style.display="none";
+    fbEl.className="feedback";
+
+    btnC.disabled=btnA.disabled=btnP.disabled=false;
+    btnReveal.disabled=false;
+    btnNext.disabled=false;
+
+    setPills();
+    if (tts) speak(`Context ${current.ctx}. Distance ${current.dist}. Display ${current.disp}. Most noticeable cues. ${current.micro}`);
+    startTimer();
+  }
+
+  function reveal(choice, timeout){
+    stopTimer(); stopAuto();
+    const d = current.driver;
+    fbEl.style.display="block";
+    fbEl.className="feedback";
+    fbLine.textContent = timeout ? `⏱ Time’s up. Correct: ${DR[d].label}` : `Correct: ${DR[d].label}`;
+    fbWhy.textContent = `Why: ${DR[d].why}`;
+    bestSay.textContent = pick(DR[d].say);
+    bestBody.textContent = `Your body: ${DR[d].body}`;
+    bestNext.textContent = pick(DR[d].next);
+    btnReveal.disabled=true;
+  }
+
+  function answer(choice){
+    stopTimer(); stopAuto();
+    const d = current.driver;
+
+    total++;
+    const ok = (choice===d);
+    if (ok){ correct++; streak++; } else { streak=0; }
+    last50.push(ok); if (last50.length>50) last50.shift();
+    updateKPIs();
+
+    fbEl.style.display="block";
+    fbEl.className="feedback " + (ok ? "good" : "bad");
+    fbLine.textContent = (ok ? "✅ Correct." : "❌ Wrong.") + ` Correct: ${DR[d].label} | You chose: ${DR[choice].label}`;
+    fbWhy.textContent = `Why: ${DR[d].why}`;
+    bestSay.textContent = pick(DR[d].say);
+    bestBody.textContent = `Your body: ${DR[d].body}`;
+    bestNext.textContent = pick(DR[d].next);
+
+    btnC.disabled=btnA.disabled=btnP.disabled=true;
+    btnReveal.disabled=true;
+
+    setPills();
+
+    if (autoNext){
+      autoTO = setTimeout(() => showScene(), clamp(autoDelay,0,5000));
+    }
+  }
+
+  // Hook up buttons
+  btnC.addEventListener("click", () => answer("control"));
+  btnA.addEventListener("click", () => answer("approval"));
+  btnP.addEventListener("click", () => answer("protection"));
+
+  btnReveal.addEventListener("click", () => reveal(null,false));
+  btnNext.addEventListener("click", () => showScene());
+
+  // Reset with settings
+  btnReset.addEventListener("click", () => {
+    mode = modeSel.value;
+    contextKey = contextSel.value;
+
+    timerSec = parseFloat(timerSecEl.value || "2");
+    if (!Number.isFinite(timerSec)) timerSec = 2;
+    timerSec = clamp(timerSec,0,10);
+
+    autoDelay = parseInt(autoDelayEl.value || "900",10);
+    if (!Number.isFinite(autoDelay)) autoDelay = 900;
+    autoDelay = clamp(autoDelay,0,5000);
+
+    autoNext = !!autoNextEl.checked;
+    hardMode = !!hardModeEl.checked;
+    tts = !!ttsEl.checked;
+
+    showScene();
+  });
+
+  // Hotkeys
+  document.addEventListener("keydown", (e) => {
+    if (e.target && (e.target.tagName==="INPUT" || e.target.tagName==="SELECT" || e.target.isContentEditable)) return;
+    const k = e.key.toLowerCase();
+    if (k==="1" && !btnC.disabled) answer("control");
+    if (k==="2" && !btnA.disabled) answer("approval");
+    if (k==="3" && !btnP.disabled) answer("protection");
+    if (k==="r" && !btnReveal.disabled) reveal(null,false);
+    if (k==="n") showScene();
+  });
+
+  // Start
+  updateKPIs();
+  showScene();
+})();
 </script>
 </body>
 </html>
